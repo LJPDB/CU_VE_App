@@ -33,11 +33,9 @@ class PresentationVC: UIViewController {
         if segue.identifier == "homeWhenInfoLoaded"{
             let tabBarVC:UITabBarController = segue.destinationViewController as! UITabBarController
             let auxInitialNavBarVC:CustomNavBarController = tabBarVC.viewControllers?.first as! CustomNavBarController
+            let auxInitialTabBarVC:HomeVC = auxInitialNavBarVC.visibleViewController as! HomeVC
+            auxInitialTabBarVC.testSegueFromPresentation = "Passing movies data...."
             MeaningAndFormValidation.printMessageWithText("\(auxInitialNavBarVC)", className: String(self))
-            //let auxTabBarController:UITabBarController = self.tabBarController?.viewControllers visibleViewController as! UITabBarController
-            //let auxInitialTabBarVC = self.tabBarController?.viewControllers?.first
-            MeaningAndFormValidation.printMessageWithText("\(auxInitialNavBarVC)", className: String(self))
-            //auxInitialTabBarVC.testSegueFromPresentation = "Passing movies data...."
         }
     }
 

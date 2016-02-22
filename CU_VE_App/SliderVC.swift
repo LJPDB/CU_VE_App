@@ -58,7 +58,8 @@ class SliderVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         var customItemSize : CGSize = self.view.frame.size
         //let getDeviceProportions : [CGFloat] = MeaningAndFormValidation.getProportionsDependingOnDeviceType()
-        customItemSize = CGSize(width: (customItemSize.width / 1.05), height: customItemSize.height)
+        customItemSize = CGSize(width: customItemSize.width, height: customItemSize.height)
+        //customItemSize = CGSize(width: (customItemSize.width / 1.05), height: customItemSize.height)
         return customItemSize
         //return self.view.frame.size
     }

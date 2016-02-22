@@ -72,9 +72,7 @@
                         </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" title="Home" id="f3M-Au-iee">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="qLk-CZ-x1e"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Home" id="f3M-Au-iee"/>
                     <connections>
                         <outlet property="FavoriteView" destination="hno-d0-OvJ" id="lVN-w7-RZn"/>
                         <outlet property="collectionContainerVC" destination="RUC-s2-5Ha" id="fzU-Pd-ffj"/>
@@ -353,7 +351,7 @@
                                         <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                         <size key="customSize" width="255" height="106"/>
                                         <connections>
-                                            <segue destination="yG9-jZ-vI4" kind="presentation" identifier="showDetailSliderMovie" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="d2a-mg-uRW"/>
+                                            <segue destination="yG9-jZ-vI4" kind="presentation" identifier="showDetailSliderMovie" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="d2a-mg-uRW"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -801,6 +799,6 @@
         <image name="sliderBgdImg" width="400" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1W2-CB-X0i"/>
+        <segue reference="d2a-mg-uRW"/>
     </inferredMetricsTieBreakers>
 </document>

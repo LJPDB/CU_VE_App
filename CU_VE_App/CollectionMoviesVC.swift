@@ -66,7 +66,7 @@ class CollectionMoviesVC : UIViewController, UICollectionViewDelegate, UICollect
     }
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         // do something when select an collection cell
-        self.delegate?.getToMovieDetails(self)
+        //self.delegate?.getToMovieDetails(self)
     }
     
     
@@ -75,7 +75,8 @@ class CollectionMoviesVC : UIViewController, UICollectionViewDelegate, UICollect
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         var customItemSize : CGSize = self.view.frame.size
         let getDeviceProportions : [CGFloat] = MeaningAndFormValidation.getProportionsDependingOnDeviceType()
-        customItemSize = CGSize(width: (customItemSize.width - 2)/getDeviceProportions[0], height: (customItemSize.height - 2)/getDeviceProportions[1])
+        customItemSize = CGSize(width: customItemSize.width/2, height: (customItemSize.height-0.6)/2)
+        //customItemSize = CGSize(width: (customItemSize.width - 2)/getDeviceProportions[0], height: (customItemSize.height - 2)/getDeviceProportions[1])
         return customItemSize
     }
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
