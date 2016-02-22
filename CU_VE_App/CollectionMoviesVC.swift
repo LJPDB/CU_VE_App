@@ -46,6 +46,12 @@ class CollectionMoviesVC : UIViewController, UICollectionViewDelegate, UICollect
         MeaningAndFormValidation.printMessageWithText("Fucking A! it works!: \(varX)", className: String(self))
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showDetailCollectionMovie"{
+            MeaningAndFormValidation.printMessageWithText("Segue when selecting cell from Movies Collection Center", className: String(self))
+        }
+    }
+    
     
     // MARK: - Collection View Methods
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -66,7 +72,7 @@ class CollectionMoviesVC : UIViewController, UICollectionViewDelegate, UICollect
     }
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         // do something when select an collection cell
-        //self.delegate?.getToMovieDetails(self)
+        self.delegate?.getToMovieDetails(self)
     }
     
     

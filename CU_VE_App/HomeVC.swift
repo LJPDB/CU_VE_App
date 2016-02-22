@@ -128,13 +128,18 @@ class HomeVC : UIViewController, centerCollectionProtocolDelegate {  //, SideBar
     }
     
     func getToMovieDetails(centerCollectionVC: CollectionMoviesVC) {
-        let backButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Cancel, target: self, action: Selector("backToHomePage"))
-        navigationItem.leftBarButtonItem = backButton
+        let backButton = UIBarButtonItem(title: "Home", style: UIBarButtonItemStyle.Done, target: self, action: "backToHomePage")
+        //navigationItem.leftBarButtonItem = backButton
         MeaningAndFormValidation.printMessageWithText("navbar?: \(navigationController?.navigationBar)", className: String(self))
     }
     
     func backToHomePage(){
         MeaningAndFormValidation.printMessageWithText("BackToHomePage action triggered!", className: String(self))
+        
+        MeaningAndFormValidation.printMessageWithText("VC active --->  \(self.navigationController?.visibleViewController?.title)", className: String(self))
+        //transitionFromViewController("MovieSessionsDetailsVC", toViewController: self, duration: 1.0, options: UIViewAnimationOptions, animations: nil, completion: nil)
+        //navigationController?.visibleViewController.p.popViewControllerAnimated(true)
+//        self.dismissViewControllerAnimated(true, completion: {})
     }
     
 }

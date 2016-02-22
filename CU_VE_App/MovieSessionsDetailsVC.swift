@@ -13,6 +13,7 @@ class MovieSessionsDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         MeaningAndFormValidation.printMessageWithText("class is loaded", className: String(self))
+        self.presentedViewController?.dismissViewControllerAnimated(true, completion: {})
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
