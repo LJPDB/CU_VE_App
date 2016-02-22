@@ -10,7 +10,7 @@ import UIKit
 
 class PresentationVC: UIViewController {
 
-    var sideBarItem:SideBar = SideBar()
+    //var sideBarItem:SideBar = SideBar()
     
     override func viewDidLoad() {
         super.viewDidLoad()

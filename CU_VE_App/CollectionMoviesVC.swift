@@ -8,9 +8,14 @@
 
 import UIKit
 
+protocol centerCollectionProtocolDelegate{
+    func getToMovieDetails(centerCollectionVC:CollectionMoviesVC)
+}
+
 class CollectionMoviesVC : UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     @IBOutlet weak var collectionViewSourceElement: UICollectionView!
+    var delegate:centerCollectionProtocolDelegate?
     
     private var leftAndRightPaddings : CGFloat = 1.0
     private var numberOfItemsRow : CGFloat = 2.0
@@ -24,7 +29,7 @@ class CollectionMoviesVC : UIViewController, UICollectionViewDelegate, UICollect
     }
     
     override func viewDidLoad() {
-        //super.viewDidLoad()
+        super.viewDidLoad()
         if collectionViewItemsArray?.count > 0{
         
         }else{
@@ -38,7 +43,7 @@ class CollectionMoviesVC : UIViewController, UICollectionViewDelegate, UICollect
     }
     
     func testVarSetting(varX: String){
-        MeaningAndFormValidation.printMessageWithText("Fucking A! it works!", className: String(self))
+        MeaningAndFormValidation.printMessageWithText("Fucking A! it works!: \(varX)", className: String(self))
     }
     
     
@@ -59,8 +64,9 @@ class CollectionMoviesVC : UIViewController, UICollectionViewDelegate, UICollect
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
-    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         // do something when select an collection cell
+        self.delegate?.getToMovieDetails(self)
     }
     
     

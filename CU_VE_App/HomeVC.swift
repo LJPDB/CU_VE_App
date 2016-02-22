@@ -9,8 +9,9 @@
 import UIKit
 
 
-class HomeVC : UIViewController {  //, SideBarDelegate
+class HomeVC : UIViewController, centerCollectionProtocolDelegate {  //, SideBarDelegate
 
+    @IBOutlet weak var favoriteView: UIView!
     @IBOutlet weak var sliderContainerVC: UIView!
     @IBOutlet weak var collectionContainerVC: UIView!
     @IBOutlet weak var favoriteContainerVC: UIView!
@@ -51,9 +52,12 @@ class HomeVC : UIViewController {  //, SideBarDelegate
         MeaningAndFormValidation.printMessageWithText("Phone Cell Data reach: \(self.internetConn?.isReachableViaWWAN())", className: String(self))
         
         //set dynamically heights for the containers..!!!!
-        let screenSize: CGRect = UIScreen.mainScreen().bounds
+      /*  let screenSize: CGRect = UIScreen.mainScreen().bounds
         let screenHeight = screenSize.height
         let screenWidth = screenSize.width
+        */
+        
+        //self.favoriteView.bounds.size = CGSizeMake(screenWidth, (screenHeight * 0.6))
         //Movies Slider container
        /* self.sliderContainerVC.frame.origin = CGPointMake(0, 0)// (x: 0, y: 0, width: screenWidth, height: screenHeight * 0.4)
         self.sliderContainerVC.frame.size = CGSizeMake(screenWidth, (screenHeight * 0.35))
@@ -106,6 +110,7 @@ class HomeVC : UIViewController {  //, SideBarDelegate
             
             if (segueDestinationCollectionMoviesVC == nil) { segueDestinationCollectionMoviesVC = segue.destinationViewController as? CollectionMoviesVC }
             segueDestinationCollectionMoviesVC!.testSegueVar = "testing MOVIES_COLLECTION segue"
+            segueDestinationCollectionMoviesVC?.delegate = self
             }
         case "toFavoriteVC": if doWeHaveData3 {
             MeaningAndFormValidation.printMessageWithText("'toFavoriteVC' segue", className: String(self))
@@ -120,6 +125,16 @@ class HomeVC : UIViewController {  //, SideBarDelegate
     
     func dataReceivedFromPresentationLayer(valueReceivedFromPresentation:String){
         MeaningAndFormValidation.printMessageWithText("Hell yeah! we received you successfully from PRESENTATION LAYER: \(valueReceivedFromPresentation)", className: String(self))
+    }
+    
+    func getToMovieDetails(centerCollectionVC: CollectionMoviesVC) {
+        let backButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Cancel, target: self, action: Selector("backToHomePage"))
+        navigationItem.leftBarButtonItem = backButton
+        MeaningAndFormValidation.printMessageWithText("navbar?: \(navigationController?.navigationBar)", className: String(self))
+    }
+    
+    func backToHomePage(){
+        MeaningAndFormValidation.printMessageWithText("BackToHomePage action triggered!", className: String(self))
     }
     
 }

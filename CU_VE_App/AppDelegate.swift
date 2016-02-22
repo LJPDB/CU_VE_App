@@ -44,32 +44,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /*MeaningAndFormValidation.printMessageWithText("Wifi reach: \(self.deviceNetConn?.isReachableViaWiFi())", className: String(self))
         MeaningAndFormValidation.printMessageWithText("Phone Cell Data reach: \(self.deviceNetConn?.isReachableViaWWAN())", className: String(self))*/
         let TabAndNavBarColor:UIColor = UIColor.blueColor() //Theme color depending on Company using app
-        //lets try gradient
-        /*let gradient = CAGradientLayer()
-        gradient.frame = UINavigationBar.appearance().frame
-        gradient.colors = [UIColor.whiteColor().CGColor, UIColor.blackColor().CGColor]
-        gradient.startPoint = CGPoint(x: 0.0, y: 0.5)
-        gradient.endPoint = CGPoint(x: 1.0, y: 0.5)
-        UIGraphicsBeginImageContext(UINavigationBar.appearance().frame.size)
-        gradient.renderInContext(UIGraphicsGetCurrentContext()!)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        UINavigationBar.appearance().setBackgroundImage(image, forBarMetrics: UIBarMetrics.Default) */
-        
-        let textColor = UIColor(red: 255.0/255.0, green: 250.0/255.0, blue: 250.0/255.0, alpha: 1.0)
-        let bothTabColor = TabAndNavBarColor //UIColor(red: 183.0/255.0, green: 44.0/255.0, blue: 44.0/255.0, alpha: 1.0)
-        let titleShadow: NSShadow = NSShadow()
-        titleShadow.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
-        titleShadow.shadowOffset = CGSize(width: 0, height: 1)
-        
-        UINavigationBar.appearance().barTintColor = bothTabColor
-        UITabBar.appearance().barTintColor = bothTabColor
-        UITabBar.appearance().tintColor = textColor
-        UINavigationBar.appearance().titleTextAttributes = [
-            NSFontAttributeName: UIFont(name: "Helvetica Neue", size: 16)!,
-            NSForegroundColorAttributeName: textColor,
-            NSShadowAttributeName: titleShadow
-        ]
         
         let pageController = UIPageControl.appearance()
         pageController.pageIndicatorTintColor = UIColor.lightGrayColor()

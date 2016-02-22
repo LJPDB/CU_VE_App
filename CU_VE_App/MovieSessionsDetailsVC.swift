@@ -10,5 +10,13 @@ import UIKit
 
 class MovieSessionsDetailsVC: UIViewController {
     //TODO
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        MeaningAndFormValidation.printMessageWithText("class is loaded", className: String(self))
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     
 }

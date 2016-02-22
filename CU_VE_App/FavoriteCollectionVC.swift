@@ -23,6 +23,7 @@ class FavoriteCollectionVC: UIViewController, UICollectionViewDelegate, UICollec
     
     override func viewDidLoad(){
         //super.viewDidLoad()
+        
     }
     
     override func didReceiveMemoryWarning() {
