@@ -31,11 +31,13 @@ class PresentationVC: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "homeWhenInfoLoaded"{
-            let navBarController:UINavigationController = segue.destinationViewController as! UINavigationController
-            let auxTabBarController:UITabBarController = navBarController.visibleViewController as! UITabBarController
-            let auxInitialTabBarVC:HomeVC = auxTabBarController.viewControllers?.first as! HomeVC
-            
-            auxInitialTabBarVC.testSegueFromPresentation = "Passing movies data...."
+            let tabBarVC:UITabBarController = segue.destinationViewController as! UITabBarController
+            let auxInitialNavBarVC:CustomNavBarController = tabBarVC.viewControllers?.first as! CustomNavBarController
+            MeaningAndFormValidation.printMessageWithText("\(auxInitialNavBarVC)", className: String(self))
+            //let auxTabBarController:UITabBarController = self.tabBarController?.viewControllers visibleViewController as! UITabBarController
+            //let auxInitialTabBarVC = self.tabBarController?.viewControllers?.first
+            MeaningAndFormValidation.printMessageWithText("\(auxInitialNavBarVC)", className: String(self))
+            //auxInitialTabBarVC.testSegueFromPresentation = "Passing movies data...."
         }
     }
 
