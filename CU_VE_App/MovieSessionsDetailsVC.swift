@@ -10,13 +10,29 @@ import UIKit
 
 class MovieSessionsDetailsVC: UIViewController {
     //TODO
+    @IBOutlet weak var moviePosterImage: UIImageView!
+    @IBOutlet weak var moviePosterImage_Container: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        moviePosterImage_Container.layer.borderWidth = 4
+        moviePosterImage_Container.layer.borderColor = UIColor.whiteColor().CGColor
+        //moviePosterImage_Container.layer.shadowOffset = CGSize(width: 5, height: 5)
+        //moviePosterImage_Container.layer.shadowOpacity = 0.7
         MeaningAndFormValidation.printMessageWithText("class is loaded", className: String(self))
-        self.presentedViewController?.dismissViewControllerAnimated(true, completion: {})
+        //self.presentedViewController?.dismissViewControllerAnimated(true, completion: {})
+        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:Selector("userTappedImage:"))
+        moviePosterImage.userInteractionEnabled = true
+        moviePosterImage.addGestureRecognizer(tapGestureRecognizer)
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func userTappedImage(img:AnyObject){
+        let uialert:UIAlertController = UIAlertController.init(title: "Image Event", message: "User tapped", preferredStyle: UIAlertControllerStyle.Alert)
+        uialert.addAction(UIAlertAction(title: "Got It!", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(uialert, animated: true, completion:nil)
     }
     
     
