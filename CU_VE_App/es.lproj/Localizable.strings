@@ -1,0 +1,20 @@
+/* 
+  ES.strings
+  CU_VE_App
+
+  Created by Leonardo Puga-DeBiase on 2/25/16.
+  Copyright © 2016 LJPDB. All rights reserved.
+*/
+"CFBundleDisplayName" = "Spanish";
+"genre" = "Genero";
+"duration" = "Duración";
+"info" = "Resumen";
+"movieSchedule" = "Horarios";
+"hall" = "Sala";
+"monday" = "Lun";
+"thursday" = "Jue";
+"wednesday" = "Mie";
+"friday" = "Vie";
+"saturday" = "Sab";
+"sunday" = "Dom";
+"tuesday" = "Mar";

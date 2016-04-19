@@ -10,21 +10,28 @@ import UIKit
 
 class MovieSessionsDetailsVC: UIViewController {
     //TODO
+    @IBOutlet weak var TestLabel: UILabel!
     @IBOutlet weak var moviePosterImage: UIImageView!
     @IBOutlet weak var moviePosterImage_Container: UIView!
+    
+    var stringArray = [String:String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.moviePosterImage_Container.layer.borderWidth = 5
-        self.moviePosterImage_Container.layer.borderColor = UIColor.whiteColor().CGColor
-        moviePosterImage_Container.layer.shadowOffset = CGSize(width: 4, height: 4)
-        moviePosterImage_Container.layer.shadowOpacity = 0.7
-        moviePosterImage_Container.layer.shadowRadius = 1.0
+        setLocalizeItems()
+        
+        moviePosterImage.layer.borderWidth = 4
+        moviePosterImage.layer.borderColor = UIColor.whiteColor().CGColor
+        moviePosterImage.layer.shadowOffset = CGSize(width: 4, height: 4)
+        moviePosterImage.layer.shadowOpacity = 0.7
+        moviePosterImage.layer.shadowRadius = 1.5
+        
         MeaningAndFormValidation.printMessageWithText("class is loaded", className: String(self))
         //self.presentedViewController?.dismissViewControllerAnimated(true, completion: {})
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:Selector("userTappedImage:"))
         moviePosterImage.userInteractionEnabled = true
         moviePosterImage.addGestureRecognizer(tapGestureRecognizer)
-        
+        TestLabel.text = stringArray["genre"]
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -36,5 +43,22 @@ class MovieSessionsDetailsVC: UIViewController {
         self.presentViewController(uialert, animated: true, completion:nil)
     }
     
+    
+    func setLocalizeItems(){        
+        stringArray["genre"] = ""
+        stringArray["duration"] = ""
+        stringArray["info"] = ""
+        stringArray["movieSchedule"] = ""
+        stringArray["hall"] = ""
+        stringArray["monday"] = ""
+        stringArray["thursday"] = ""
+        stringArray["wednesday"] = ""
+        stringArray["friday"] = ""
+        stringArray["saturday"] = ""
+        stringArray["sunday"] = ""
+        stringArray["tuesday"] = ""
+        stringArray = MeaningAndFormValidation.getLocalizeStrings(stringArray)
+        print(stringArray)
+    }
     
 }

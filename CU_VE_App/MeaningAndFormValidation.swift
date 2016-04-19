@@ -202,12 +202,23 @@ public class MeaningAndFormValidation {
                     return [2.12,2]
                 case "iPhone Simulator":
                     return [2.12,2]
-                default:    return[9,9]
+                default:
+                    return[9,9]
             }
         }else{
             MeaningAndFormValidation.printMessageWithText("getProportionsDependingOnDeviceType()--> No device matched!", className: String(self))
             return [9,9]
         }
+    }
+    
+    class func getLocalizeStrings(var textToLocalize:[String:String]) -> [String:String]{
+        for (key,_) in textToLocalize{
+           // textToLocalize.updateValue(<#T##value: Value##Value#>, forKey: <#T##Hashable#>)
+            textToLocalize.updateValue(NSLocalizedString(key, comment: "Translation value"), forKey: key)
+            print(NSLocalizedString(key, comment: "Translation value"))
+        }
+        //print(textToLocalize)
+        return textToLocalize
     }
 
 }

@@ -68,7 +68,7 @@ class WebServicesConnection {
                 self.singleServiceObjects[serviceObjectName] = contactObj
             default: print("no service object created")
             }
-            i++;
+            i += 1;
         }
         print("WebService Objects: \(self.singleServiceObjects)");
         

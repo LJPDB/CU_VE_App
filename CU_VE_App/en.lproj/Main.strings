@@ -1,0 +1,96 @@
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "0Gj-i1-49N"; */
+"0Gj-i1-49N.title" = "Home";
+
+/* Class = "UIViewController"; title = "SettingsVC"; ObjectID = "2iy-9a-IDf"; */
+"2iy-9a-IDf.title" = "SettingsVC";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "5nF-hD-VgY"; */
+"5nF-hD-VgY.title" = "Home";
+
+/* Class = "UILabel"; text = "Orange"; ObjectID = "6Gv-gd-k9s"; */
+"6Gv-gd-k9s.text" = "Orange";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "9Pz-wT-XVY"; */
+"9Pz-wT-XVY.title" = "Title";
+
+/* Class = "UITabBarItem"; title = "Movies"; ObjectID = "9nG-1b-uiI"; */
+"9nG-1b-uiI.title" = "Movies";
+
+/* Class = "UILabel"; text = "Blue"; ObjectID = "AZD-ux-6X4"; */
+"AZD-ux-6X4.text" = "Blue";
+
+/* Class = "UIViewController"; title = "HomeVC"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "HomeVC";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "E6D-SN-Dir"; */
+"E6D-SN-Dir.title" = "Title";
+
+/* Class = "UIViewController"; title = "PremierVC"; ObjectID = "Eqd-lV-dqb"; */
+"Eqd-lV-dqb.title" = "PremierVC";
+
+/* Class = "UIViewController"; title = "MoviesVC"; ObjectID = "HXB-z7-TeH"; */
+"HXB-z7-TeH.title" = "MoviesVC";
+
+/* Class = "UIViewController"; title = "CollectionMoviesVC"; ObjectID = "JOK-dy-vvb"; */
+"JOK-dy-vvb.title" = "CollectionMoviesVC";
+
+/* Class = "UILabel"; text = "bottom"; ObjectID = "Ofg-C4-ert"; */
+"Ofg-C4-ert.text" = "bottom";
+
+/* Class = "UILabel"; text = "bottom"; ObjectID = "QUN-oc-QXk"; */
+"QUN-oc-QXk.text" = "bottom";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "TNt-BS-Gmb"; */
+"TNt-BS-Gmb.text" = "Label";
+
+/* Class = "UIViewController"; title = "Tutorial Paging Content"; ObjectID = "UfS-hT-jkG"; */
+"UfS-hT-jkG.title" = "Tutorial Paging Content";
+
+/* Class = "UIPageViewController"; title = "Tutorial Page Controller"; ObjectID = "XKN-FN-QwZ"; */
+"XKN-FN-QwZ.title" = "Tutorial Page Controller";
+
+/* Class = "UIViewController"; title = "Favorite Movie VC"; ObjectID = "ZG7-Gz-6OR"; */
+"ZG7-Gz-6OR.title" = "Favorite Movie VC";
+
+/* Class = "UILabel"; text = "bottom"; ObjectID = "dy0-cV-DVG"; */
+"dy0-cV-DVG.text" = "bottom";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "f3M-Au-iee"; */
+"f3M-Au-iee.title" = "Home";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "hnE-MF-gNl"; */
+"hnE-MF-gNl.title" = "Settings";
+
+/* Class = "UITabBarItem"; title = "Theater"; ObjectID = "kmj-AI-OVF"; */
+"kmj-AI-OVF.title" = "Theater";
+
+/* Class = "UITabBarController"; title = "TabBarVC"; ObjectID = "l59-F5-4cJ"; */
+"l59-F5-4cJ.title" = "TabBarVC";
+
+/* Class = "UILabel"; text = "Red"; ObjectID = "mDY-U8-06P"; */
+"mDY-U8-06P.text" = "Red";
+
+/* Class = "UILabel"; text = "Test font aproval"; ObjectID = "oCw-AW-rOU"; */
+"oCw-AW-rOU.text" = "Test font aproval";
+
+/* Class = "UIViewController"; title = "TheatersVC"; ObjectID = "rpm-By-hAv"; */
+"rpm-By-hAv.title" = "TheatersVC";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "uyk-B5-fqH"; */
+"uyk-B5-fqH.title" = "Title";
+
+/* Class = "UIViewController"; title = "SliderVC"; ObjectID = "w6z-S1-LjD"; */
+"w6z-S1-LjD.title" = "SliderVC";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "weo-FL-ici"; */
+"weo-FL-ici.title" = "Title";
+
+/* Class = "UIViewController"; title = "Movie Sessions Details VC"; ObjectID = "yG9-jZ-vI4"; */
+"yG9-jZ-vI4.title" = "Movie Sessions Details VC";
+
+/* Class = "UIViewController"; title = "PresentationLoadingInfoVC"; ObjectID = "zZZ-xp-MgT"; */
+"zZZ-xp-MgT.title" = "PresentationLoadingInfoVC";
+
+/* Class = "UITabBarItem"; title = "Premier"; ObjectID = "zva-HZ-5AM"; */
+"zva-HZ-5AM.title" = "Premier";

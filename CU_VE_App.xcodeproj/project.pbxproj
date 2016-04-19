@@ -30,6 +30,7 @@
 		878126F81C5933E000802C1A /* MoviesCollectionViewFlowLayoutSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878126F71C5933E000802C1A /* MoviesCollectionViewFlowLayoutSubClass.swift */; };
 		87D04CC51C6B8C8A000D16E9 /* MovieSessionsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D04CC41C6B8C8A000D16E9 /* MovieSessionsDetailsVC.swift */; };
 		87DAF6EA1C5C0E9C00935BD1 /* InnerViewControllerContainer_Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DAF6E91C5C0E9C00935BD1 /* InnerViewControllerContainer_Center.swift */; };
+		87E80EC61C7FBBD300E18271 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87E80EC81C7FBBD300E18271 /* Localizable.strings */; };
 		B39AB0C41C402B5D00353261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39AB0C31C402B5D00353261 /* AppDelegate.swift */; };
 		B39AB0C61C402B5D00353261 /* PresentationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39AB0C51C402B5D00353261 /* PresentationVC.swift */; };
 		B39AB0C91C402B5D00353261 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39AB0C71C402B5D00353261 /* Main.storyboard */; };
@@ -85,6 +86,10 @@
 		878126F71C5933E000802C1A /* MoviesCollectionViewFlowLayoutSubClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesCollectionViewFlowLayoutSubClass.swift; sourceTree = "<group>"; };
 		87D04CC41C6B8C8A000D16E9 /* MovieSessionsDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieSessionsDetailsVC.swift; sourceTree = "<group>"; };
 		87DAF6E91C5C0E9C00935BD1 /* InnerViewControllerContainer_Center.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerViewControllerContainer_Center.swift; sourceTree = "<group>"; };
+		87E80EBF1C7FB96000E18271 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		87E80EC01C7FB96000E18271 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		87E80EC71C7FBBD300E18271 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		87E80EC91C7FBBD900E18271 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B39AB0C01C402B5D00353261 /* CU_VE_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CU_VE_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39AB0C31C402B5D00353261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B39AB0C51C402B5D00353261 /* PresentationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationVC.swift; sourceTree = "<group>"; };
@@ -194,6 +199,14 @@
 			name = "Movie Sessions Details VC";
 			sourceTree = "<group>";
 		};
+		87E80EC11C7FB99300E18271 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				87E80EC81C7FBBD300E18271 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		B39AB0B71C402B5D00353261 = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +230,7 @@
 		B39AB0C21C402B5D00353261 /* CU_VE_App */ = {
 			isa = PBXGroup;
 			children = (
+				87E80EC11C7FB99300E18271 /* Resources */,
 				870824001C74B93900C13065 /* Custom SubClasses */,
 				87568F201C6C1730004688BC /* SideMenu */,
 				87D04CC31C6B8C6F000D16E9 /* Movie Sessions Details VC */,
@@ -416,6 +430,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = B39AB0B71C402B5D00353261;
 			productRefGroup = B39AB0C11C402B5D00353261 /* Products */;
@@ -436,6 +451,7 @@
 			files = (
 				B39AB0CE1C402B5D00353261 /* LaunchScreen.storyboard in Resources */,
 				B39AB0CB1C402B5D00353261 /* Assets.xcassets in Resources */,
+				87E80EC61C7FBBD300E18271 /* Localizable.strings in Resources */,
 				B39AB0C91C402B5D00353261 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,10 +542,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		87E80EC81C7FBBD300E18271 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87E80EC71C7FBBD300E18271 /* en */,
+				87E80EC91C7FBBD900E18271 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		B39AB0C71C402B5D00353261 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B39AB0C81C402B5D00353261 /* Base */,
+				87E80EBF1C7FB96000E18271 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -538,6 +564,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B39AB0CD1C402B5D00353261 /* Base */,
+				87E80EC01C7FB96000E18271 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -581,7 +608,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -620,7 +647,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
